@@ -32,7 +32,7 @@ class SubmitClass{
     getInputHobbi(){
         return cy.xpath("//input[@id='hobbies-checkbox-3']")
     }
-    getInputAddess(){
+    getInputAddress(){
         return cy.xpath("//textarea[@id='currentAddress']")
     }
     selectState(){

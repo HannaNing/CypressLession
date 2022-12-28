@@ -11,7 +11,7 @@ Cypress.on('uncaught:exception', (err, runnable) => {
 })
 
 describe("TODO App > ", (defaultCommandTimeout=1000) => {
-    it("Check First Child", () => {
+    it("Check Submit form", () => {
         cy.viewport(1920,1080)
         cy.visit("https://demoqa.com/automation-practice-form")
 
@@ -26,7 +26,7 @@ describe("TODO App > ", (defaultCommandTimeout=1000) => {
         submitClass.getSelectDayOfBirth().click()
         submitClass.getInputSubject().type('Math{enter}')
         submitClass.getInputHobbi().check({force:true})
-        submitClass.getInputAddess().type('So 9, Duy Tan, Ha Noi')
+        submitClass.getInputAddress().type('So 9, Duy Tan, Ha Noi')
         submitClass.selectState().type('NCR{enter}')
         submitClass.selectCity().type('Delhi{enter}')
         submitClass.clickSubmit().click()
